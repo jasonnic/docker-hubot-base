@@ -1,7 +1,7 @@
 machine:
     environment:
-        #This is specific to GCP!
-        PROJECT_NAME: learningGCP
+        #This is specific to GCP ie make sure you're using projectid!
+        PROJECT_NAME: learninggcp-143312
         CLUSTER_NAME: default-ecs-cluster
         CLOUDSDK_COMPUTE_ZONE: us-east1-b
 
