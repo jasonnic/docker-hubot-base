@@ -8,7 +8,7 @@ dependencies:
 
 test:
     override:
-        - docker build -t jasonnic/jasonnic-hubot:v_$CIRCLE_BUILD_NUM
+        - docker run -d jasonnic/jasonnic-hubot:v_$CIRCLE_BUILD_NUM
     
 deployment:
     hub:
