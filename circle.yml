@@ -1,6 +1,7 @@
 machine:
     environment:
-        PROJECT_NAME: docker-hubot
+        #This is specific to GCP!
+        PROJECT_NAME: learningGCP
         CLUSTER_NAME: default-ecs-cluster
         CLOUDSDK_COMPUTE_ZONE: us-east1-b
 
