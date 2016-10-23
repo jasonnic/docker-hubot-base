@@ -1,7 +1,8 @@
 machine:
-    PROJECT_NAME: docker-hubot
-    CLUSTER_NAME: default-ecs-cluster
-    CLOUDSDK_COMPUTE_ZONE: us-east1-b
+    environment:
+        PROJECT_NAME: docker-hubot
+        CLUSTER_NAME: default-ecs-cluster
+        CLOUDSDK_COMPUTE_ZONE: us-east1-b
 
     services:
         - docker

@@ -13,7 +13,9 @@ The idea of using Docker, CircleCI and ECS are all his.  I wanted to do the same
 
 
 ##GCP Instructions
-
+[Create GCP Service Account](https://cloud.google.com/storage/docs/authentication#service_accounts)
+base64 the JSON File Created for the service Account
+add `GCLOUD_SERVICE_KEY` to enviornment variables
 
 ## Hubot Adapters
 
