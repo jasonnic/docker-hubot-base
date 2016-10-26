@@ -9,8 +9,8 @@ machine:
         - docker
     
 dependencies:
-    override: 
-        - docker build -t jasonnic/jasonnic-hubot:v_$CIRCLE_BUILD_NUM .
+    # override: 
+    #     - docker build -t jasonnic/jasonnic-hubot:v_$CIRCLE_BUILD_NUM .
     pre:
         - sudo /opt/google-cloud-sdk/bin/gcloud --quiet components update --version 120.0.0
         - sudo /opt/google-cloud-sdk/bin/gcloud --quiet components update --version 120.0.0 kubectl
@@ -25,9 +25,11 @@ dependencies:
 
 
 test:
-    override:
+    # override:
+    #     - docker run -d jasonnic/jasonnic-hubot:v_$CIRCLE_BUILD_NUM
+    post:
         - docker run -d jasonnic/jasonnic-hubot:v_$CIRCLE_BUILD_NUM
-    
+
 deployment:
     # Use hub if you are deploying to Docker Hub
     # hub:
