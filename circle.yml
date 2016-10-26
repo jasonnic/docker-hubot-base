@@ -28,7 +28,7 @@ test:
     # override:
     #     - docker run -d jasonnic/jasonnic-hubot:v_$CIRCLE_BUILD_NUM
     post:
-        - docker run -d jasonnic/jasonnic-hubot:v_$CIRCLE_BUILD_NUM
+        - docker run -d us.gcr.io/${PROJECT_NAME}/jasonnic-hubot:$CIRCLE_SHA1
 
 deployment:
     # Use hub if you are deploying to Docker Hub
